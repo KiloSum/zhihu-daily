@@ -8,11 +8,19 @@ const routes=[{
     title:"知乎日报-WebApp",
   }
 },{
-  path:'/detial/:id',
-  name: 'detai',
+  path:'/detail/:id',
+  name: 'detail',
   component: lazy(()=>import('../views/Detail')),
   meta:{
     title: '新闻详情-知乎日报'
+  }
+},
+{
+  path:'/login',
+  name:'login',
+  component:lazy(() => import("../views/Login")),
+  meta:{
+      title: "登录/注册-知乎日报"
   }
 },
 {
@@ -49,3 +57,4 @@ const routes=[{
 }
 
 ]
+export default routes
